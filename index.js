@@ -5,8 +5,17 @@ let userInputString = prompt(
 
 let stringArray = userInputString.split(",");
 
-
-}
-
-
+function countFlavors(flavors) {
+  let flavorCount = {}; 
+  
+  for (let i = 0; i < flavors.length; i++) {
+    let flavor = flavors[i].trim().toLowerCase(); 
+    
+    if (flavorCount[flavor]) {
+      flavorCount[flavor]++;
+    } else {
+      flavorCount[flavor] = 1;
+    }
+  }
+  return flavorCount;
 
