@@ -19,3 +19,18 @@ function countFlavors(flavors) {
   }
   return flavorCount;
 
+}
+
+
+console.table(countFlavors(stringArray));
+
+let userInput = prompt(
+  "Enter froyo flavors (comma-separated):", 
+  "vanilla,vanilla,vanilla,strawberry,coffee,coffee"
+);
+
+if (userInput !== null) {
+    console.log("Customer ordered:", userInput);
+} else {
+    console.log("The user canceled the order.");
+
