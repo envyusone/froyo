@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Froyo Flow | Online Ordering</title>
+    <style>
+        body {
+            background-color: #fdf5f7;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            text-align: center;
+            max-width: 400px;
+        }
+        .logo {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 1rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        h1 { color: #d63384; margin-bottom: 0.5rem; }
+        p { color: #6c757d; line-height: 1.6; }
+        .order-btn {
+            background-color: #d63384;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s;
+            margin-top: 1rem;
+        }
+        .order-btn:hover { transform: scale(1.05); background-color: #b82b71; }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h1>Soft Serve Logic</h1>
+        <p>Your local favorite, now digital. Click below to start your flavor count!</p>
+        <button class="order-btn" onclick="location.reload()">Start New Order</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
