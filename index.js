@@ -33,4 +33,4 @@ if (userInput !== null) {
     console.log("Customer ordered:", userInput);
 } else {
     console.log("The user canceled the order.");
-
+}
